@@ -1,0 +1,48 @@
+<h1>User Stories (Features)</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>As a [user]</th>
+      <th>I want [what?]</th>
+      <th>Because [Why?]</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input type="text" [(ngModel)]="userstory.feature" name="name">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.user" name="user">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.what" name="what">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.why" name="why">
+      </td>
+      <td>
+        <button (click)="add()" class="btn btn-primary">Add</button>
+      </td>
+    </tr>
+    <tr *ngFor="let userstory of userstories">
+      <td>
+        <input type="text" [(ngModel)]="userstory.feature" name="name">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.user" name="user">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.what" name="what">
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="userstory.why" name="why">
+      </td>
+      <td>
+        <button (click)="delete(userstory._id)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

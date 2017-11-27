@@ -1,0 +1,9 @@
+/*convert HTML list from vertical to horizontal*/
+#menu ul{
+    list-style: none;/*no bullets*/
+    font-size: 1.4em;
+    float: right;
+}
+#menu li{
+    display: inline;/*horizital*/
+}
